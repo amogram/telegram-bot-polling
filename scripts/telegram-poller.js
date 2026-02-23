@@ -34,7 +34,7 @@ bot.on("channel_post", async (msg) => {
 
         const url = urlMatch[0];
         console.log(`Received URL: ${url} from chat ID: ${chatId}`);
-        console.log(`Date receoived: ${new Date(msg.date * 1000).toISOString()}`);
+        console.log(`Date received: ${new Date(msg.date * 1000).toISOString()}`);
 
         // Extract hashtags as tags
         const tags = [];
