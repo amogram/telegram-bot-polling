@@ -38,7 +38,7 @@ bot.on("channel_post", async (msg) => {
 
         // Extract hashtags as tags
         const tags = [];
-        const tagMatches = text.match(/#(\w+)/g);
+        const tagMatches = text.match(/#([\w-]+)/g);
         if (tagMatches) {
             tagMatches.forEach(tag => {
                 tags.push(tag.substring(1)); // Remove the '#' character
